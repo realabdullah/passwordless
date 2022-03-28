@@ -48,6 +48,8 @@
           <input 
             type="email"
             placeholder="blah@meh.com"
+            v-model="email"
+            :disabled="isSubmitting"
             class="block text-gray-800 w-full rounded bg-transparent border py-2 px-4 disabled:opacity-50">
         </label>
 
