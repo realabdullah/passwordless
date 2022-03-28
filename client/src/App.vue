@@ -10,7 +10,7 @@
 
 <style>
 body {
-  @apply bg-gray-800 text-white;
+  @apply bg-gray-100 text-white;
 }
 
 .link {
