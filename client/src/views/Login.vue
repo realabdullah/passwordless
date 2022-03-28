@@ -48,7 +48,7 @@
           <input 
             type="email"
             placeholder="blah@meh.com"
-            class="block w-full rounded bg-transparent border py-2 px-4 disabled:opacity-50">
+            class="block text-gray-800 w-full rounded bg-transparent border py-2 px-4 disabled:opacity-50">
         </label>
 
         <div class="flex justify-end items-center">
