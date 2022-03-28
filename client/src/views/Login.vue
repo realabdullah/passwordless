@@ -37,9 +37,8 @@
         Passwordless Login
       </h1>
 
-      <form
-        @submit.prevent="loginOrCreate"
-        class="bg-white max-w-md mx-auto rounded p-4 border-2 shadow-slate-200">
+      <form @submit.prevent="loginOrCreate"
+        class="bg-whitee max-w-md mx-auto rounded p-4 border-2 shadow-slate-200">
 
         <label class="block mb-2">
           <span class="block text-gray-600 mb-2">
