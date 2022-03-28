@@ -1,3 +1,35 @@
+<script setup>
+  import { ref } from 'vue'
+  import vm from '../main'
+
+  const email = ref("")
+  const isSubmitting = ref(false)
+
+  const loginOrCreate = async () => {
+    isSubmitting.value = true
+
+    if (!email.value) return alert("Please enter a valid email address")
+
+    const response = await fetch('http://localhost:5000/loginorcreate', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        email: email.value
+      })
+    }).then(res => res.json())
+
+    if (response.success) {
+      vm.$toast.success(response.message)
+    } else {
+      vm.$toast.error(response.message)
+    }
+
+    isSubmitting.value = false
+  }
+</script>
+
 <template>
   <main class="login min-h-screen bg-gray-100">
     <section class="container mx-auto pt-16 pb-4 px-4">
@@ -6,7 +38,7 @@
       </h1>
 
       <form
-        @submit.prevent=""
+        @submit.prevent="loginOrCreate"
         class="bg-white max-w-md mx-auto rounded p-4 border-2 shadow-slate-200">
 
         <label class="block mb-2">
