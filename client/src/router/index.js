@@ -5,7 +5,7 @@ import vm from '../main'
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Home,
     meta: {
       requiresAuth: true
