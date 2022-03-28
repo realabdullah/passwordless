@@ -23,7 +23,7 @@
           <input 
             type="text"
             value="Login"
-            class="inline-block bg-emerald-400 text-lg text-gray-800 font-bold uppercase rounded px-4 py-2 cursor-pointer disabled:opacity-50">
+            class="w-24 inline-block bg-emerald-400 text-lg text-gray-800 font-bold uppercase rounded px-4 py-2 cursor-pointer disabled:opacity-50">
         </div>
       </form>
     </section>
