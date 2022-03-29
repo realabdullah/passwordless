@@ -54,7 +54,7 @@
 
         <div class="flex justify-end items-center">
           <input 
-            type="text"
+            type="submit"
             value="Login"
             class="w-full inline-block bg-[#1da1f2] text-lg text-gray-100 text-center font-bold uppercase rounded px-4 py-2 cursor-pointer disabled:opacity-50">
         </div>
